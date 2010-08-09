@@ -9,6 +9,7 @@
         "core/fx",
         "core/style",
         "core/xhr",
+				"core/ext",
         "footer"
     ]
 }

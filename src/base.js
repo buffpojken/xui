@@ -10,7 +10,7 @@ var undefined,
     try { var a = slice(document.documentElement.childNodes)[0].nodeType; }
     catch(e){ slice = function (e) { var ret=[]; for (var i=0; e[i]; i++) ret.push(e[i]); return ret; }; }
 
-window.x$ = window.xui = xui = function(q, context) {
+window.x$ = window.$ = window.xui = xui = function(q, context) {
     return new xui.fn.find(q, context);
 };
 
