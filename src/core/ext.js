@@ -1,4 +1,3 @@
-xui.events = {};
 xui.empty = function(){};
 
 // Add geo-specific capabilities to the framework
@@ -43,10 +42,8 @@ xui.tmpl = function(str, data){
 		// generator (and which will be cached).
 		new Function("obj",
 		"var p=[],print=function(){p.push.apply(p,arguments);};" +
-
 		// Introduce the data as local variables using with(){}
 		"with(obj){p.push('" +
-
 		// Convert the template into pure JavaScript
 		str
 		.replace(/[\r\t\n]/g, " ")
